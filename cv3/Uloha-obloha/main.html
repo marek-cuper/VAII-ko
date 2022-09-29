@@ -5,16 +5,53 @@
     <title>Title</title>
   <style>
     body{
-      background-image: url("darius_frankovic2007_57439.jpg");
+      background-image: url("sky.jpg");
       width: 100vh;
       background-size: cover;
       margin: 0;
       background-repeat: no-repeat;
     }
+    .sun{
+        background-image: url("sun.jpg");
+        background-size: contain;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bird {
+        background-image: url("bird.jpg");
+        background-size: contain;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    .top {
+        top: 0;
+    }
+    .bottom {
+        bottom: 0;
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        right: 0;
+    }
+    .flip {
+        transform: scaleX(-1);
+    }
 
   </style>
 </head>
 <body>
-
+    <div class="sun"></div>
+    <div class="bird top flip left"></div>
+    <div class="bird top right"></div>
+    <div class="bird bottom flip left"></div>
+    <div class="bird bottom right"></div>
 </body>
 </html>
