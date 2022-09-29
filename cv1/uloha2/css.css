@@ -1,0 +1,26 @@
+
+ul.prva-posledna li:first-child{
+    color:red;
+}
+
+ul.prva-posledna li:last-child{
+    color:green;
+}
+
+ul.druha{
+    color: orange;
+}
+
+/*
+div:hover + ul.druha{
+    background: aqua;
+}
+*/
+div:hover{
+    --main-bg-color: aqua;
+}
+ul.druha {
+    background-color: var(--main-bg-color);
+}
+
+
